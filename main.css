@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-section {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.content-section__h2 {
+  font-family: "Pacifico", cursive;
+}
+.content-section__text-block {
+  font-family: "Domine", "Times New Roman", serif;
+}
+
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing-section__h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 96px;
+}
+.landing-section__h2 {
+  font-family: "Pacifico", cursive;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+.footer p {
+  font-family: "Domine", "Times New Roman", serif;
+}
+
+.nav-menu {
+  font-family: "Domine", "Times New Roman", serif;
+}

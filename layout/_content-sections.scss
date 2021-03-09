@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+
+.content-section {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    &__h2 {
+        font-family: $header-font;
+
+    }
+
+    &__text-block {
+        font-family: $body-font;
+    }
+}
