@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+.content-section {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.content-section__h2 {
+  font-family: "Pacifico", cursive;
+}
+.content-section__text-block {
+  font-family: "Domine", "Times New Roman", serif;
+}

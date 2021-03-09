@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Jay Lovell - Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="nav-menu">
-            <ul class="nav-menu__ul">
-                <li class="nav-menu__ul__li">Skills</li>
-                <li class="nav-menu__ul__li">Projects</li>
-                <li class="nav-menu__ul__li">About</li>
-                <li class="nav-menu__ul__li">Contact</li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
+        <div class="nav-section">
+            <nav class="nav-menu">
+                <ul class="nav-menu__ul">
+                    <li class="nav-menu__ul__li">Skills</li>
+                    <li class="nav-menu__ul__li">Projects</li>
+                    <li class="nav-menu__ul__li">About</li>
+                    <li class="nav-menu__ul__li">Contact</li>
+                </ul>
+            </nav>
+            <section class="dark-mode-section">
+                <!-- toggle switch for dark mode goes here -->
+            </section>
+        </div>
         <section class="landing-section">
             <h1 class="landing-section__h1">Jay Lovell</h1>
             <h2 class="landing-section__h2">Admiral IT Delivery Graduate Scheme</h2>
         </section>
+    </header>
+    
+    <main>
         <section class="content-section">
             <h2 class="content-section__h2">Skills</h2>
             <!-- skills icons and some text -->
@@ -43,9 +49,11 @@
             <h2 class="content-section__h2">Contact</h2>
             <!-- LinkedIn GitHub and email links-->
         </section>
-</main>
-<footer class="footer">
-    <!-- Copyright year-->
-</footer>
+    </main>
+
+    <footer class="footer">
+        <!-- Copyright year-->
+        <p>2021   Jay Lovell</p>
+    </footer>
 </body>
 </html>

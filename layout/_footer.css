@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+.footer p {
+  font-family: "Domine", "Times New Roman", serif;
+}
