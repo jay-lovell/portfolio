@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine&family=Pacifico&display=swap");
-.nav-menu {
+.nav-section {
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  padding-right: 30px;
+}
+.nav-section__button {
+  display: flex;
+  flex-direction: column;
+}
+.nav-section__button-line {
+  display: inline;
+  width: 35px;
+  height: 4px;
+  background-color: #264653;
+  margin: 3px 0;
+}
+.nav-section .nav-menu {
+  display: none;
   font-family: "Domine", "Times New Roman", serif;
+}
+.nav-section .dark-mode-section {
+  display: flex;
+  height: 27px;
+  width: 60px;
+  background-color: #264653;
+  border-radius: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #FEFAE0;
+}
+.nav-section .dark-mode-section .dark-mode-section__button {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: #FEFAE0;
 }

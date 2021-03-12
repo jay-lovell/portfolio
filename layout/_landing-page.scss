@@ -1,0 +1,25 @@
+.landing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $light-background-primary;
+
+    &__h1 {
+        font-family: $header-font;
+        font-weight: 300;
+        color: $light-text-header-color;
+        font-size: 9rem;
+        margin-bottom: 15px;
+    }
+
+
+    &__h2 {
+        font-family: $header-font;
+        font-weight: 300;
+        color: $light-text-header-color;
+        font-size: 2.5rem;
+        margin-top: 30px;
+    }
+}

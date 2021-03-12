@@ -1,5 +1,54 @@
 @import "../abstracts/variables.scss";
 
-.nav-menu {
-    font-family: $body-font;
+.nav-section {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding-right: 30px;
+    
+        &__button { 
+        display:flex;
+        flex-direction: column;
+        }
+    
+        &__button-line {
+        display: inline;
+        width: 35px;
+        height: 4px;
+        background-color: $light-text-header-color;
+        margin: 3px 0;
+        }
+
+        .nav-menu {
+        display: none;
+        font-family: $body-font;
+        }
+
+        .dark-mode-section {
+        display: flex;
+        height: 27px;
+        width: 60px;
+        background-color: $light-text-header-color;
+        border-radius: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        color: $light-background-primary;
+
+            .dark-mode-section__button {
+            border-radius: 50%;
+            height: 25px;
+            width:  25px;
+            background-color: $light-background-primary;
+            }
+        }
 }
+
+
+
+    
+    
+        
