@@ -5,8 +5,12 @@
     justify-content: center;
     margin-top: 50px;
     padding: 10px;
+    background-color: $light-text-title-color;
+    color: $light-background-primary;
+    
 
     p {
         font-family: $body-font;
+        font-weight: 700;
     }
 }

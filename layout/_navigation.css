@@ -6,23 +6,13 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding-right: 30px;
 }
-.nav-section__button {
-  display: flex;
-  flex-direction: column;
-}
-.nav-section__button-line {
-  display: inline;
-  width: 35px;
-  height: 4px;
-  background-color: #264653;
-  margin: 3px 0;
-}
-.nav-section .nav-menu {
-  display: none;
-  font-family: "Domine", "Times New Roman", serif;
+.nav-section .fa-bars {
+  font-size: 2rem;
+  color: #264653;
+  cursor: pointer;
 }
 .nav-section .dark-mode-section {
   display: flex;
@@ -34,9 +24,44 @@
   align-items: center;
   color: #FEFAE0;
 }
-.nav-section .dark-mode-section .dark-mode-section__button {
+.nav-section .dark-mode-section__button {
   border-radius: 50%;
   height: 25px;
   width: 25px;
   background-color: #FEFAE0;
+}
+.nav-section .sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #264653;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.nav-section .sidenav__closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3rem;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #FEFAE0;
+}
+.nav-section .sidenav__link {
+  padding: 32px 32px 8px 32px;
+  text-decoration: none;
+  font-family: "Domine", "Times New Roman", serif;
+  font-size: 1.5rem;
+  color: #FEFAE0;
+  display: block;
+  transition: 0.3s;
+}
+.nav-section .sidenav__link:hover {
+  color: #E76F51;
 }
