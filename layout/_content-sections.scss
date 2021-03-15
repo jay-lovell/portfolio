@@ -9,6 +9,7 @@
     padding-left: 100px;
     
     &__h2 {
+        margin-top: 50px;
         font-family: $header-font;
         z-index: 1;
         font-size: 4rem;
@@ -23,17 +24,30 @@
     }
 }
 
-.background-shape {
+.background-shape-one {
     position: absolute;
-    z-index: 10;
-    top: 1080px;
+    top: 1024px;
     width: 55.6vw;
     z-index: 0;
-height: 450px;
--webkit-transform: skew(20deg);
--moz-transform: rotate(90deg);
--o-transform: skew(20deg);
--ms-transform: skew(20deg);
-background: $light-background-secondary;
-transform:         matrix(2.304, 0.320, 0.000, 2.098, 138.441, -46.000);}
+    height: 500px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    background: $light-background-secondary;
+    transform:         matrix(2.304, 0.320, 0.000, 2.098, 138.441, -46.000);
+}
 
+.background-shape-two {
+    position: absolute;
+    top: 3072px;
+    width: 55.6vw;
+    z-index: 0;
+    height: 500px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    background: $light-background-secondary;
+    transform:         matrix(2.304, 0.320, 0.000, 2.098, 138.441, -46.000);
+}
