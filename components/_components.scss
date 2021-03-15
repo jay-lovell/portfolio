@@ -1,9 +1,12 @@
+@import "../abstracts/variables";
+
 .landing-section {
 
     &__rectangle {
         background-color: $light-accent;
         height: 15px;
         width: 480px;
+        box-shadow: 2px 2px 2px 2px lightgray;
     }
 }
 
