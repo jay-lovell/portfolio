@@ -11,5 +11,3 @@ To Do
 - Dark mode switch, JS and sizing
 - Secret mode
 - Content and links to content-sections
-
-- Custom domain set-up
