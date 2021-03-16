@@ -10,50 +10,36 @@
 </head>
 <body>
     <header>
-        <div class="nav-section">
-            <i class="fas fa-bars" onclick="openNav()"> </i>
-            
-            
-            <nav id="sidenav" class="sidenav">
-                <a href="javascript:void(0)" class="sidenav__closebtn" onclick="closeNav()">&times;</a>
-            
-                <a href="#skills" class="sidenav__link">Skills</a>
-                <a href="#projects" class="sidenav__link">Projects</a>
-                <a href="#about" class="sidenav__link">About</a>
-                <a href="#contact" class="sidenav__link">Contact</a>
-            
-            </nav>
+        <i class="fas fa-bars nav-icon" id="nav-icon" onclick="openNav()"></i>
+        <label class="dark-mode-switch">
+            <input type="checkbox" class="dark-mode-switch__input">
+            <span class="dark-mode-switch__slider"></span>
+        </label>
+    </header>
 
-
-
-            <section class="dark-mode-section">
-            <div class="dark-mode-section__button">
-            
-            </div>
-            <i class="far fa-moon"></i>
-            <!-- toggle switch for dark mode goes here -->
-            </section>
-        </div>
-        
-        
-        
+    <nav id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="sidenav__closebtn" onclick="closeNav()">&times;</a>
+        <a href="#skills" class="sidenav__link">Skills</a>
+        <a href="#projects" class="sidenav__link">Projects</a>
+        <a href="#about" class="sidenav__link">About</a>
+        <a href="#contact" class="sidenav__link">Contact</a>
+    </nav>
+    
+    <main id="myMain">
         <section class="landing-section">
             <h1 class="landing-section__h1">Jay Lovell</h1>
             <div class="landing-section__rectangle"></div>
-            <h2 class="landing-section__h2">Admiral IT Delivery Graduate Scheme</h2>
+            <h2 class="landing-section__h2">Junior Software Engineer</h2>
         </section>
-    </header>
     
-    
-    <main>
-    
-        <div class="background-shape-one"></div>
-        <div class="background-shape-two"></div>
-        <section class="content-section" id="skills">
-            <h2 class="content-section__h2">Skills</h2>
-            <!-- skills icons and some text -->
-            <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
-        </section>
+        <div class="diagonal-box-shaded">
+            <section class="content-section-with-background" id="skills">
+                <h2 class="content-section__h2">Skills</h2>
+                <!-- skills icons and some text -->
+                <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
+            </section>
+        </div>
+
         <section class="content-section" id="projects">
             <h2 class="content-section__h2">Projects</h2>
             <!-- image -->
@@ -62,11 +48,14 @@
             <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
         </section>
         
-        <section class="content-section" id="about">
-            <h2 class="content-section__h2">About</h2>
-            <!--image and about text-->
-            <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
-        </section>
+        <div class="diagonal-box-shaded">
+            <section class="content-section-with-background" id="about">
+                <h2 class="content-section__h2">About</h2>
+                <!--image and about text-->
+                <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
+            </section>
+        </div>
+
         <section class="content-section" id="contact">
             <h2 class="content-section__h2">Contact</h2>
             <!-- LinkedIn GitHub and email links-->
