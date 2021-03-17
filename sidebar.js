@@ -6,8 +6,8 @@ window.addEventListener("click", function(e){
 })
 
 function openNav() {
-    document.getElementById("sidenav").style.width = "200px";
-    setTimeout(closeNav, 4000);
+    document.getElementById("sidenav").style.width = "20vw";
+    setTimeout(closeNav, 5000);
   }
   
 function closeNav() {
