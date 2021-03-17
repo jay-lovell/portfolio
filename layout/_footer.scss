@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: $light-text-title-color;
+    color: $light-background-primary;
+    
+
+    p {
+        font-family: $body-font;
+        font-weight: 700;
+    }
+}

@@ -12,13 +12,14 @@
     <header>
         <i class="fas fa-bars nav-icon" id="nav-icon" onclick="openNav()"></i>
         <div class="switch-area">
-        <form action="#">
-            <div class="switch">
-              <input id="switch-1" type="checkbox" class="switch-input" />
-              <label for="switch-1" class="switch-label"></label>
-            </div>
-            
-          </form><i class="far fa-moon"></i></div>
+            <form action="#">
+                <div class="switch">
+                    <input id="switch-1" type="checkbox" class="switch-input" onchange="darkMode()" />
+                    <label for="switch-1" class="switch-label"></label>
+                </div>
+            </form>
+            <i class="far fa-moon"></i>
+        </div>
     </header>
 
     <nav id="sidenav" class="sidenav">
@@ -88,7 +89,6 @@
                 <i class="far fa-envelope contact-icon"></i>
                 <i class="fab fa-twitter contact-icon"></i>
             </div>
-
         </section>
     </main>
 
