@@ -1,0 +1,6 @@
+.diagonal-box-shaded {
+    position: static;
+    background-color: $light-background-secondary;
+    transform: skewY(10deg);
+    z-index: -1;
+}

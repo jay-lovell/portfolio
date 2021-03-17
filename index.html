@@ -10,62 +10,85 @@
 </head>
 <body>
     <header>
-        <div class="nav-section">
-            <i class="fas fa-bars" onclick="openNav()"> </i>
-            
-            
-            <nav id="sidenav" class="sidenav">
-                <a href="javascript:void(0)" class="sidenav__closebtn" onclick="closeNav()">&times;</a>
-            
-                <a href="#skills" class="sidenav__link">Skills</a>
-                <a href="#projects" class="sidenav__link">Projects</a>
-                <a href="#about" class="sidenav__link">About</a>
-                <a href="#contact" class="sidenav__link">Contact</a>
-            
-            </nav>
-
-
-
-            <section class="dark-mode-section">
-            <div class="dark-mode-section__button">
-            
-            </div>
+        <i class="fas fa-bars nav-icon" id="nav-icon" onclick="openNav()"></i>
+        <div class="switch-area">
+            <form action="#">
+                <div class="switch">
+                    <input id="switch-1" type="checkbox" class="switch-input" onchange="darkMode()" />
+                    <label for="switch-1" class="switch-label"></label>
+                </div>
+            </form>
             <i class="far fa-moon"></i>
-            <!-- toggle switch for dark mode goes here -->
-            </section>
         </div>
-        
-        
-        <main>
+    </header>
+
+    <nav id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="sidenav__closebtn" onclick="closeNav()">&times;</a>
+        <a href="#skills" class="sidenav__link">Skills</a>
+        <a href="#projects" class="sidenav__link">Projects</a>
+        <a href="#about" class="sidenav__link">About</a>
+        <a href="#contact" class="sidenav__link">Contact</a>
+    </nav>
+    
+    <main id="myMain">
         <section class="landing-section">
             <h1 class="landing-section__h1">Jay Lovell</h1>
             <div class="landing-section__rectangle"></div>
-            <h2 class="landing-section__h2">Admiral IT Delivery Graduate Scheme</h2>
+            <h2 class="landing-section__h2">Junior Software Engineer</h2>
         </section>
-    </header>
     
-    
-        <div class="background-shape"></div>
-        <section class="content-section" id="skills">
-            <h2 class="content-section__h2">Skills</h2>
-            <!-- skills icons and some text -->
-            <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
-        </section>
+        <div class="diagonal-box-shaded">
+            <section class="content-section-with-background" id="skills">
+                <h2 class="content-section__h2">Skills</h2>
+                <!-- skills icons and some text -->
+                <p class="content-section__text-block">Here is a selection of some of the many skills I claim to possess.</p>
+                <div class="skills-container">
+                    
+                    <i class="fab fa-html5 skills-container__icon"></i>
+                    <i class="fab fa-css3-alt skills-container__icon"></i>
+                    <i class="fab fa-sass skills-container__icon"></i>
+                    <i class="fab fa-js-square skills-container__icon"></i>
+                    <i class="fab fa-java skills-container__icon"></i>
+                    <i class="fab fa-angular skills-container__icon"></i>
+                </div>
+            </section>
+        </div>
+
         <section class="content-section" id="projects">
             <h2 class="content-section__h2">Projects</h2>
-            <!-- image -->
-            <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
-            <!-- image 2 -->
-            <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
+            <div class="grid-container">
+            <img class="grid-container__upper-img" src="./images/placeholder.jpg">
+            <p class="grid-container__upper-text">Lorem Ipsum Doler Sit Amet</p>
+            <img class="grid-container__lower-img" src="./images/placeholder.jpg">
+            <p class="grid-container__lower-text">Lorem Ipsum Doler Sit Amet</p>
+            </div>
         </section>
-        <section class="content-section" id="about">
-            <h2 class="content-section__h2">About</h2>
-            <!--image and about text-->
-            <p class="content-section__text-block">Lorem Ipsum Doler Sit Amet</p>
-        </section>
+        
+        <div class="diagonal-box-shaded">
+            <section class="content-section-with-background" id="about">
+                <h2 class="content-section__h2">About</h2>
+                <img class="profile-image" src="./images/jay.jfif">
+                <p class="content-section__text-block">I was born in 1987 and it's been pretty much all downhill since then.</section>
+        </div>
+
         <section class="content-section" id="contact">
             <h2 class="content-section__h2">Contact</h2>
-            <!-- LinkedIn GitHub and email links-->
+            <p class="content-section__text-block">Please feel free to contact me using the form below, or on any of the platforms listed</p>
+            <form class="contact-form">
+                <label class="contact-form__label" for="fullName">Name</label>
+                <input id="fullName" class="contact-form__input" type="text" placeholder="Your name">
+                <label class="contact-form__label" for="email">Email</label>
+                <input id="email" class="contact-form__input" type="text" placeholder="Your email">
+                <label class="contact-form__label" for="comment">Comment</label>
+                <textarea id="comment" class="contact-form__input" rows="3" placeholder="What can I do for you?"></textarea>
+                <input id="submit" class="contact-form__submit" type="submit">
+            </form>
+            <div class="contact-links">
+                <i class="fab fa-linkedin contact-icon"></i>
+                <i class="fab fa-github contact-icon"></i>
+                <i class="far fa-envelope contact-icon"></i>
+                <i class="fab fa-twitter contact-icon"></i>
+            </div>
         </section>
     </main>
 

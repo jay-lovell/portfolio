@@ -1,10 +1,8 @@
-@import "base/_resets.scss";
-@import "layout/_content-sections.scss";
-@import "abstracts/_variables.scss";
-@import "layout/_header.scss";
-@import "layout/_footer.scss";
-@import "layout/_navigation.scss";
-@import "layout/_landing-page.scss";
-@import "components/_components.scss";
-
-
+@import "abstracts/variables";
+@import "base/resets";
+@import "layout/background-shapes";
+@import "layout/header";
+@import "layout/landing-page";
+@import "layout/content-sections";
+@import "layout/navigation";
+@import "layout/footer";
