@@ -22,7 +22,7 @@
         font-family: $body-font;
         text-align: center;
         color: $light-text-paragraph-color;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 50px;
     }
 
@@ -30,6 +30,12 @@
         @extend .content-section;
         transform: skewY(-10deg);
         
+    }
+
+    .skills-list {
+        list-style-type: none;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
     }
 
     .skills-container {
@@ -40,8 +46,13 @@
         font-size: 5rem;
         text-shadow: 1px 1px 1px lightgrey;
         padding: 20px;
-        margin: 60px;
+        margin: 20px;
         width: 100%;
+    }
+
+    &__h3 {
+        @extend .landing-section__h2;
+        font-size: 2rem;
     }
 
     .grid-container {
@@ -91,7 +102,10 @@
     .contact-icon {
         @extend .skills-container;
         flex-direction: row;
-        font-size: 4rem;
+        font-size: 3rem;
+        margin: 20px;
+        
+        
     }
 
     .profile-image {
@@ -102,6 +116,14 @@
 
     .contact-links {
         display: flex;
+        
+        a {
+
+       
+        &:link, &:active, &:visited {
+            text-decoration: none;
+        } }
+        
     }
 
     .contact-form {
@@ -109,7 +131,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
-        margin-bottom: 30px;
+        
 
         &__label {
             display: none
