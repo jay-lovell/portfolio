@@ -116,7 +116,7 @@ header .switch-input:checked + .switch-label::after {
   margin-bottom: 15px;
   text-shadow: 2px 2px 2px lightgrey;
 }
-.landing-section__h2 {
+.landing-section__h2, .content-section__h3 {
   font-family: "Pacifico", cursive;
   font-weight: 300;
   color: #264653;
@@ -144,11 +144,16 @@ header .switch-input:checked + .switch-label::after {
   font-family: "Domine", "Times New Roman", serif;
   text-align: center;
   color: #264653;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 50px;
 }
 .content-section-with-background {
   transform: skewY(-10deg);
+}
+.content-section .skills-list, .content-section-with-background .skills-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
 }
 .content-section .skills-container, .content-section .contact-icon, .content-section-with-background .skills-container, .content-section-with-background .contact-icon {
   display: flex;
@@ -158,8 +163,11 @@ header .switch-input:checked + .switch-label::after {
   font-size: 5rem;
   text-shadow: 1px 1px 1px lightgrey;
   padding: 20px;
-  margin: 60px;
+  margin: 20px;
   width: 100%;
+}
+.content-section__h3 {
+  font-size: 2rem;
 }
 .content-section .grid-container, .content-section-with-background .grid-container {
   display: grid;
@@ -198,7 +206,8 @@ header .switch-input:checked + .switch-label::after {
 }
 .content-section .contact-icon, .content-section-with-background .contact-icon {
   flex-direction: row;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin: 20px;
 }
 .content-section .profile-image, .content-section-with-background .profile-image {
   width: 200px;
@@ -208,12 +217,14 @@ header .switch-input:checked + .switch-label::after {
 .content-section .contact-links, .content-section-with-background .contact-links {
   display: flex;
 }
+.content-section .contact-links a:link, .content-section-with-background .contact-links a:link, .content-section .contact-links a:active, .content-section-with-background .contact-links a:active, .content-section .contact-links a:visited, .content-section-with-background .contact-links a:visited {
+  text-decoration: none;
+}
 .content-section .contact-form, .content-section-with-background .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 .content-section .contact-form__label, .content-section-with-background .contact-form__label {
   display: none;
@@ -247,7 +258,7 @@ header .switch-input:checked + .switch-label::after {
   left: 0;
   background-color: #264653;
   overflow-x: hidden;
-  padding-top: 200px;
+  padding-top: 100px;
   transition: 0.5s;
   opacity: 0.9;
 }
@@ -275,12 +286,18 @@ header .switch-input:checked + .switch-label::after {
 
 .footer {
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 5px;
   background-color: #264653;
   color: #FEFAE0;
 }
 .footer p {
   font-family: "Domine", "Times New Roman", serif;
   font-weight: 700;
+  font-size: 1rem;
+}
+.footer img {
+  height: 16px;
+  width: auto;
+  align-self: center;
 }
