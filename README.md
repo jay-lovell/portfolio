@@ -11,3 +11,6 @@ To Do
 - Dark mode switch, JS and sizing
 - Secret mode
 - Content and links to content-sections
+
+=== SEPTEMBER 2022 ===
+Site taken down ready for full rewrite
